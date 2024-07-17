@@ -3,7 +3,7 @@ function ShopItem({name, color, img, price}) {
 		<div className="list-view__item">
 			<div className="list-view__item--name">{name}</div>
 			<div className="list-view__item--color">{color}</div>
-			<div className="list-view__item--img-wrap"><img className="list-view__item--img" src={img} /></div>
+			<div className="list-view__item--img-wrap"><img className="list-view__item--img" src={img} alt={name} /></div>
 			<span className="list-view__item--price">{'$' + price}</span>
 			<button className="list-view__item--button" type="button">Add to card</button>
 		</div>
